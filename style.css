@@ -1,60 +1,54 @@
-/* Add the font family from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* style.css content */
 
 body {
-    background-color: #0e0e10;
-    background-image: url('C:\Users\admin\Desktop\academics\csc102\Assignment 2.1\images\casino-background.jpg')
-    background-size: cover;
-    background-position: center;
-    color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 20px;
+    background-color: #f0f0f0;
     margin: 0;
+    padding: 20px;
 }
 
-h1 {
-    color: #ffcc00;
+#memeImage {
+    position: absolute;
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out; /* Smooth transition for movement */
 }
 
-#gameResult, #messageDisplay {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #222224;
-    border: 1px solid #ffcc00;
-    display: inline-block;
-    min-width: 300px;
-    animation: highlight 1s ease-in-out infinite alternate; /* Animation for highlighting */
-}
-
-button {
-    background-color: #ffcc00;
-    color: #0e0e10;
-    border: none;
+.button {
     padding: 10px 20px;
-    font-size: 16px;
+    margin: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Bootstrap blue */
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #e6b800;
+.button:hover {
+    background-color: #0056b3; /* Darken the button on hover */
 }
 
-/* Responsive design adjustments */
-@media (max-width: 600px) {
-    #gameResult, #messageDisplay {
-        min-width: 250px;
-    }
-
-    body {
-        padding: 10px;
-    }
+#startButton {
+    background-color: #28a745; /* Bootstrap green */
 }
 
-/* Keyframes for animation */
-@keyframes highlight {
-    from { background-color: #222224; }
-    to { background-color: #333334; }
+#startButton:hover {
+    background-color: #218838; /* Darken the green button on hover */
 }
 
+#stopButton {
+    background-color: #dc3545; /* Bootstrap red */
+}
+
+#stopButton:hover {
+    background-color: #c82333; /* Darken the red button on hover */
+}
+
+#stopButton:disabled,
+#startButton:disabled {
+    background-color: #6c757d; /* Bootstrap grey */
+    cursor: not-allowed;
+}

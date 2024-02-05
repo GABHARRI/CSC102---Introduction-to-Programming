@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Main HTML structure for Meme Mover application -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Mover</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background-color: #f0f0f0; /* Light grey background for a subtle look */
+        }
+
+        /* Styling for the meme image */
+        #memeImage {
+            position: absolute;
+            width: 100px; /* Adjust based on your image */
+            border-radius: 10px; /* Adds rounded corners to your meme image */
+        }
+
+        /* Styling for buttons */
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px; /* Rounded corners for buttons */
+            font-weight: bold;
+            color: white; /* Text color */
+        }
+        #startButton {
+            background-color: #4CAF50; /* Green background */
+        }
+        #stopButton {
+            background-color: #f44336; /* Red background */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Gabriel Harrison -->
+
+<!-- Buttons for controlling the meme movement -->
+<div>
+    <button id="startButton" class="button">Start</button>
+    <button id="stopButton" class="button" disabled>Stop</button>
+</div>
+
+<!-- Meme image placeholder -->
+<img id="memeImage" src="meme.jpeg" alt="Meme Image">
+
+<!-- JavaScript file that handles the logic -->
+<script src="script.js"></script>
+</body>
+</html>
