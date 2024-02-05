@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+    User Input Validation
+    Author: Gabriel Harrison - CSC102 Assignment 3.2
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input Validation</title>
+    <!-- Link to the external CSS file for styling the page elements -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to the JavaScript file. The 'defer' attribute ensures the script is executed after the document has been parsed -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Background music -->
+    <audio autoplay loop>
+        <source src="background music.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <!-- Container div to hold all UI elements for clean styling and alignment -->
+    <div class="container">
+        <h1>Access Secret Message</h1>
+        <!-- Form for user input with ID for easy reference in JS. The form includes fields for name and zip code -->
+        <form id="userInfoForm">
+            <!-- Input field for the user's first name -->
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <!-- Input field for the user's last name -->
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <!-- Input field for the user's zip code -->
+            <input type="text" id="zipCode" placeholder="Zip Code" required>
+            <!-- Submit button for the form -->
+            <button type="submit">Access Message</button>
+        </form>
+        <!-- Div to display messages to the user, such as validation errors or the secret message -->
+        <div id="message"></div>
+    </div>
+</body>
+</html>
