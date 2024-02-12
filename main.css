@@ -1,6 +1,6 @@
 body {
-    background-color: #ffffff
-    color: #ff0000
+    background-color: #ffffff;
+    color: #ff0000;
 }
 
 nav {
@@ -18,6 +18,9 @@ footer {
 
 #memeImage {
     margin-right: 200px;
+    background-image: url('meme.jpeg')
+    background-size: cover
+    background-position: center
 }
 
 header {
